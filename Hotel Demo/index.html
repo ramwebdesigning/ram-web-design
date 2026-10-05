@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grand Horizon Hotel | Luxury Stay</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #222;
+            background: #f7f7f7;
+        }
+
+        header {
+            background: #17202a;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .hero {
+            min-height: 570px;
+            background: linear-gradient(
+                rgba(20, 30, 40, 0.65),
+                rgba(20, 30, 40, 0.65)
+            ),
+            linear-gradient(135deg, #8d9aa5, #d6c6a8);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .primary {
+            background: #d4af37;
+            color: #17202a;
+        }
+
+        .secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .rooms {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .room-card {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .room-icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .room-card h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .room-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .about {
+            background: white;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #17202a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .whatsapp {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #20c76a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 27px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+        }
+
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .rooms {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🏨 Grand Horizon Hotel
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Experience Comfort & Luxury</h1>
+
+        <p>
+            Welcome to Grand Horizon Hotel — a modern hotel
+            website concept designed for comfortable stays,
+            relaxing experiences and memorable journeys.
+        </p>
+
+        <a href="#rooms" class="btn primary">
+            Explore Rooms
+        </a>
+
+        <a href="#contact" class="btn secondary">
+            Contact Hotel
+        </a>
+
+    </div>
+
+</section>
+
+
+<section id="rooms">
+
+    <div class="section-title">
+
+        <h2>Our Rooms</h2>
+
+        <p>
+            Comfortable rooms designed for every type of traveller.
+        </p>
+
+    </div>
+
+
+    <div class="rooms">
+
+        <div class="room-card">
+
+            <div class="room-icon">🛏️</div>
+
+            <h3>Deluxe Room</h3>
+
+            <p>
+                A comfortable and stylish room for couples
+                and business travellers.
+            </p>
+
+        </div>
+
+
+        <div class="room-card">
+
+            <div class="room-icon">🏨</div>
+
+            <h3>Executive Suite</h3>
+
+            <p>
+                Spacious accommodation with premium comfort
+                and modern facilities.
+            </p>
+
+        </div>
+
+
+        <div class="room-card">
+
+            <div class="room-icon">🌟</div>
+
+            <h3>Luxury Suite</h3>
+
+            <p>
+                A premium stay experience designed for guests
+                looking for extra comfort and elegance.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="about" id="about">
+
+    <div class="section-title">
+
+        <h2>About Grand Horizon</h2>
+
+    </div>
+
+    <p>
+        Grand Horizon Hotel is a sample hotel website created
+        as a portfolio demonstration by Ram Web Design.
+        This demo shows how a professional hotel website can
+        present rooms, services, information and contact details
+        to customers.
+    </p>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <h2>Contact Us</h2>
+
+    </div>
+
+    <p>📍 Sample Hotel Address, India</p>
+
+    <p>📞 +91 6284488267</p>
+
+    <p>✉️ ramwebdesigning36@gmail.com</p>
+
+    <a href="https://wa.me/916284488267"
+       class="btn primary"
+       target="_blank">
+        WhatsApp Us
+    </a>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Grand Horizon Hotel | Demo Website by Ram Web Design
+    </p>
+
+</footer>
+
+
+<a href="https://wa.me/916284488267"
+   class="whatsapp"
+   target="_blank">
+    💬
+</a>
+
+</body>
+</html>
