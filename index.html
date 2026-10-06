@@ -1,109 +1,1889 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ram Web Design — Professional Websites Worldwide</title>
-<meta name="description" content="Ram Web Design creates modern, fast and mobile-friendly websites for businesses, restaurants, hotels and local brands worldwide.">
-<style>
-:root{--bg:#07111f;--panel:#0e1d34;--text:#f5f8ff;--muted:#a9b8cf;--line:rgba(255,255,255,.1);--blue:#42a5ff;--cyan:#35e0ff;--purple:#9b6cff;--green:#25d366;--gold:#ffc857}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
-header{position:sticky;top:0;z-index:100;background:rgba(7,17,31,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{display:flex;align-items:center;gap:7px;font-weight:900;font-size:21px}.logo-r{font-size:40px;font-style:italic;background:linear-gradient(135deg,var(--cyan),var(--blue),var(--purple));-webkit-background-clip:text;color:transparent}.logo-web{color:var(--cyan)}.logo-tag{display:block;font-size:8px;color:#8fa3bd;letter-spacing:1px}
-nav{display:flex;gap:25px;font-size:13px;font-weight:700}nav a:hover{color:var(--cyan)}.quote,.btn{background:linear-gradient(100deg,var(--blue),var(--purple));color:#fff;font-weight:900;border-radius:10px;padding:12px 17px;font-size:13px}
-.hero{background:radial-gradient(circle at 75% 20%,rgba(53,224,255,.2),transparent 27%),radial-gradient(circle at 90% 80%,rgba(155,108,255,.2),transparent 28%),linear-gradient(135deg,#07111f,#0a1930 55%,#11113a)}
-.hero-inner{min-height:650px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:45px;padding:70px 0}.badge{display:inline-block;padding:7px 12px;border:1px solid rgba(53,224,255,.25);background:rgba(53,224,255,.07);border-radius:999px;color:#9defff;font-size:11px;font-weight:800}.hero h1{font-size:clamp(42px,6vw,70px);line-height:1.02;letter-spacing:-2.5px;margin:18px 0}.gradient{background:linear-gradient(90deg,var(--cyan),var(--blue),var(--purple));-webkit-background-clip:text;color:transparent}.hero p{max-width:650px;color:var(--muted);font-size:17px}.checks{display:flex;flex-wrap:wrap;gap:12px 22px;margin:24px 0}.checks span{font-size:12px}.checks b{color:var(--cyan);margin-right:6px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn.secondary{background:transparent;border:1px solid var(--line)}
-.hero-card{position:relative;min-height:430px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));border-radius:28px;padding:22px;box-shadow:0 25px 70px rgba(0,0,0,.28)}.browser{border:1px solid var(--line);border-radius:18px;background:#091526;overflow:hidden}.browser-top{height:38px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:6px;padding:0 13px}.dot{width:8px;height:8px;border-radius:50%;background:#40516a}.address{margin-left:10px;flex:1;height:20px;border-radius:8px;background:#101f34}.mock-site{padding:28px;background:linear-gradient(135deg,#0d294a,#102044);min-height:290px}.mock-nav{display:flex;justify-content:space-between;color:#8edfff;font-size:9px}.mock-title{font-size:32px;font-weight:900;line-height:1.05;margin:35px 0 10px}.mock-sub{font-size:10px;color:#a9c0da}.mock-btn{display:inline-block;margin-top:16px;padding:8px 12px;background:#35cfff;border-radius:8px;color:#06111f;font-size:8px;font-weight:900}.float-stat{position:absolute;right:10px;bottom:22px;padding:15px 17px;border-radius:16px;background:rgba(7,17,31,.9);border:1px solid var(--line)}.float-stat b{font-size:25px;display:block}
-section{padding:90px 0}.kicker{color:var(--cyan);font-size:11px;font-weight:900;letter-spacing:1.5px}.title{font-size:clamp(30px,4vw,45px);line-height:1.1;margin:8px 0 12px}.sub{color:var(--muted);max-width:700px;font-size:14px}
-.services{background:#091525}.service-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px;margin-top:32px}.card{padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.04)}.card:hover{border-color:rgba(53,224,255,.3);transform:translateY(-4px)}.icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:rgba(66,165,255,.12);color:var(--cyan);font-size:20px;margin-bottom:15px}.card h3{font-size:16px;margin-bottom:9px}.card p{font-size:12px;color:var(--muted);min-height:75px}.learn{display:inline-block;margin-top:14px;color:#8edfff;font-size:12px;font-weight:900}
-.portfolio{background:linear-gradient(180deg,#07111f,#0b1730)}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}.project{border:1px solid var(--line);border-radius:20px;padding:10px;background:#0c1b31}.project-preview{min-height:190px;border-radius:14px;padding:18px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(145deg,#132f50,#11172e)}.project-preview h3{font-size:23px;line-height:1.1}.project-preview small{color:#a9c4df;font-size:10px;margin-top:7px}.project-foot{padding:15px 5px 5px;color:var(--muted);font-size:11px}.project-foot b{display:block;color:#fff;font-size:13px}
-.about{background:#f5f8fc;color:#081426}.about .sub{color:#5c6d84}.about-grid{display:grid;grid-template-columns:1fr 1fr .55fr;gap:30px;align-items:center}.about-visual{min-height:300px;border-radius:25px;position:relative;background:linear-gradient(145deg,#dcecff,#fff)}.about-screen{position:absolute;left:45px;top:58px;width:320px;height:180px;border:7px solid #8797aa;border-radius:14px;background:#091b32}.about-screen:after{content:"R";position:absolute;inset:0;display:grid;place-items:center;font-size:75px;font-weight:900;font-style:italic;color:#42a5ff}.about-badge{position:absolute;right:20px;bottom:22px;width:100px;height:100px;border-radius:50%;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,#42a5ff,#9b6cff);color:#fff;font-weight:900}.bullets{list-style:none;display:grid;gap:10px;margin-top:18px}.bullets li{font-size:13px}.bullets li:before{content:"✓";color:#0788ad;margin-right:8px;font-weight:900}.stats{background:#fff;border:1px solid #e3eaf2;border-radius:20px;padding:18px}.stat{padding:17px 5px;border-bottom:1px solid #e8eef5}.stat:last-child{border:0}.stat b{font-size:29px;color:#0a1c33}.stat small{display:block;color:#64758a}
-.reviews{background:#07111f}.review-head{display:flex;justify-content:space-between;gap:20px;align-items:end}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.review{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:18px;padding:20px}.review p{color:#d9e5f3;font-size:13px;min-height:70px}.person{margin-top:13px;font-size:12px}.stars{color:var(--gold);letter-spacing:2px;margin-top:8px}.review-form{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:24px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.04)}.review-form h3{grid-column:1/-1;font-size:20px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:11px;color:#a9bad0;font-weight:800}input,textarea,select{width:100%;padding:12px 13px;border-radius:10px;border:1px solid rgba(255,255,255,.13);background:#09182c;color:#fff;outline:none}textarea{min-height:110px;resize:vertical}.submit{border:0;cursor:pointer}.status{grid-column:1/-1;color:#9defff;font-size:12px;min-height:18px}
-.contact{background:linear-gradient(135deg,#0c1d36,#11143a)}.contact-box{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center;padding:40px;border:1px solid var(--line);border-radius:26px;background:rgba(255,255,255,.045)}.contact-list{display:grid;gap:12px;color:#dce8f6;font-size:14px}.contact-list b{color:#fff}footer{background:#040b15;color:#9fb0c4;padding:30px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:11px}.float-wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-size:27px;z-index:9999;box-shadow:0 12px 28px rgba(0,0,0,.35)}
-@media(max-width:980px){nav{gap:12px}.service-grid{grid-template-columns:repeat(3,1fr)}.hero-inner{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr 1fr}.stats{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr)}}
-@media(max-width:700px){.nav{padding:10px 0;position:relative}.logo{font-size:17px}.logo-r{font-size:31px}.menu-btn{display:block;margin-left:auto}nav{display:none;position:absolute;top:68px;left:0;right:0;padding:14px;background:#0b1930;border:1px solid var(--line);border-radius:14px;flex-direction:column;gap:4px;box-shadow:0 18px 40px rgba(0,0,0,.35)}nav.open{display:flex}nav a{padding:10px 12px;border-radius:8px}nav a:hover{background:rgba(255,255,255,.05)}.quote{font-size:11px;padding:9px 12px}.hero-inner{padding:55px 0 45px}.hero h1{letter-spacing:-1.5px}.hero p{font-size:14px}.service-grid,.projects,.about-grid,.review-grid,.contact-box,.review-form{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.about-screen{left:20px;width:280px}.about-visual{min-height:250px}section{padding:65px 0}.review-head{display:block}.review-head .btn{display:inline-block;margin-top:18px}.field.full,.review-form h3,.status{grid-column:auto}.contact-box{padding:25px}.float-wa{right:15px;bottom:15px}}
 
-:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
-.menu-btn{display:none;border:1px solid var(--line);background:#0b1b30;color:#fff;border-radius:10px;padding:10px 12px;font-size:18px;cursor:pointer}
-nav a{transition:color .2s ease}
-.card,.project,.review,.btn{transition:transform .2s ease,border-color .2s ease,background .2s ease}
-.btn:hover{transform:translateY(-2px)}
+<title>Ram Web Design — Professional Websites Worldwide</title>
+
+<meta name="description" content="Ram Web Design creates modern, fast and mobile-friendly websites for businesses, restaurants, hotels and local brands worldwide.">
+
+<style>
+:root{
+  --navy:#06101f;
+  --navy2:#0b1930;
+  --blue:#2878ff;
+  --cyan:#20d9e8;
+  --purple:#8b5cf6;
+  --gold:#f5b942;
+  --white:#f8fbff;
+  --slate:#a9bad0;
+  --line:rgba(255,255,255,.11);
+  --green:#25d366;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Inter,Arial,sans-serif;
+  background:var(--navy);
+  color:var(--white);
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(6,16,31,.88);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--line);
+}
+
+.nav{
+  min-height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  font-weight:900;
+  font-size:21px;
+}
+
+.logo-r{
+  font-size:42px;
+  font-style:italic;
+  background:linear-gradient(135deg,var(--cyan),var(--blue),var(--purple));
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.logo-web{
+  color:var(--cyan);
+}
+
+.logo-tag{
+  display:block;
+  font-size:8px;
+  color:#8fa3bd;
+  letter-spacing:1px;
+}
+
+nav{
+  display:flex;
+  gap:25px;
+  font-size:13px;
+  font-weight:700;
+}
+
+nav a{
+  transition:.25s ease;
+}
+
+nav a:hover{
+  color:var(--cyan);
+}
+
+.quote,
+.btn{
+  background:linear-gradient(100deg,var(--blue),var(--purple));
+  color:#fff;
+  font-weight:900;
+  border-radius:11px;
+  padding:12px 18px;
+  font-size:13px;
+  box-shadow:0 8px 25px rgba(40,120,255,.20);
+}
+
+.quote:hover,
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(40,120,255,.30);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  background:
+    radial-gradient(circle at 15% 20%,rgba(32,217,232,.13),transparent 25%),
+    radial-gradient(circle at 78% 15%,rgba(40,120,255,.20),transparent 28%),
+    radial-gradient(circle at 90% 85%,rgba(139,92,246,.18),transparent 28%),
+    linear-gradient(135deg,var(--navy),#091a35 55%,#101437);
+}
+
+.hero-inner{
+  min-height:650px;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  align-items:center;
+  gap:45px;
+  padding:70px 0;
+}
+
+.badge{
+  display:inline-block;
+  padding:7px 13px;
+  border:1px solid rgba(32,217,232,.28);
+  background:rgba(32,217,232,.07);
+  border-radius:999px;
+  color:#9df7ff;
+  font-size:11px;
+  font-weight:800;
+}
+
+.hero h1{
+  font-size:clamp(42px,6vw,70px);
+  line-height:1.02;
+  letter-spacing:-2.5px;
+  margin:18px 0;
+}
+
+.gradient{
+  background:linear-gradient(
+    90deg,
+    var(--cyan),
+    var(--blue),
+    var(--purple),
+    var(--gold)
+  );
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.hero p{
+  max-width:650px;
+  color:var(--slate);
+  font-size:17px;
+}
+
+.checks{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px 22px;
+  margin:24px 0;
+}
+
+.checks span{
+  font-size:12px;
+}
+
+.checks b{
+  color:var(--cyan);
+  margin-right:6px;
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn.secondary{
+  background:rgba(255,255,255,.035);
+  border:1px solid var(--line);
+  box-shadow:none;
+}
+
+.btn.secondary:hover{
+  border-color:rgba(32,217,232,.45);
+  background:rgba(32,217,232,.06);
+}
+
+/* ================= HERO CARD ================= */
+
+.hero-card{
+  position:relative;
+  min-height:430px;
+  border:1px solid rgba(32,217,232,.16);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(32,217,232,.09),
+      rgba(40,120,255,.06),
+      rgba(139,92,246,.08)
+    );
+  border-radius:28px;
+  padding:22px;
+  box-shadow:0 25px 70px rgba(0,0,0,.32);
+}
+
+.browser{
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#081426;
+  overflow:hidden;
+}
+
+.browser-top{
+  height:38px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:0 13px;
+}
+
+.dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+}
+
+.dot:nth-child(1){
+  background:#ff6b6b;
+}
+
+.dot:nth-child(2){
+  background:var(--gold);
+}
+
+.dot:nth-child(3){
+  background:#42e695;
+}
+
+.address{
+  margin-left:10px;
+  flex:1;
+  height:20px;
+  border-radius:8px;
+  background:#10233d;
+}
+
+.mock-site{
+  padding:28px;
+  background:
+    radial-gradient(circle at 80% 20%,rgba(32,217,232,.18),transparent 30%),
+    linear-gradient(135deg,#0c2b4d,#111c40);
+  min-height:290px;
+}
+
+.mock-nav{
+  display:flex;
+  justify-content:space-between;
+  color:#8eefff;
+  font-size:9px;
+}
+
+.mock-title{
+  font-size:32px;
+  font-weight:900;
+  line-height:1.05;
+  margin:35px 0 10px;
+}
+
+.mock-sub{
+  font-size:10px;
+  color:#a9c0da;
+}
+
+.mock-btn{
+  display:inline-block;
+  margin-top:16px;
+  padding:8px 12px;
+  background:linear-gradient(90deg,var(--cyan),var(--blue));
+  border-radius:8px;
+  color:#06111f;
+  font-size:8px;
+  font-weight:900;
+}
+
+.float-stat{
+  position:absolute;
+  right:10px;
+  bottom:22px;
+  padding:15px 17px;
+  border-radius:16px;
+  background:rgba(6,16,31,.93);
+  border:1px solid rgba(245,185,66,.25);
+}
+
+.float-stat b{
+  font-size:25px;
+  display:block;
+  color:var(--gold);
+}
+
+.float-stat small{
+  color:#b7c7d9;
+}
+
+/* ================= COMMON SECTIONS ================= */
+
+section{
+  padding:90px 0;
+}
+
+.kicker{
+  color:var(--cyan);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1.5px;
+}
+
+.title{
+  font-size:clamp(30px,4vw,45px);
+  line-height:1.1;
+  margin:8px 0 12px;
+}
+
+.sub{
+  color:var(--slate);
+  max-width:700px;
+  font-size:14px;
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+  background:
+    radial-gradient(circle at 90% 10%,rgba(139,92,246,.08),transparent 25%),
+    #091525;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:15px;
+  margin-top:32px;
+}
+
+.card{
+  padding:22px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.055),
+      rgba(32,217,232,.025)
+    );
+  transition:.25s ease;
+}
+
+.card:hover{
+  border-color:rgba(32,217,232,.35);
+  transform:translateY(-5px);
+  box-shadow:0 18px 35px rgba(0,0,0,.20);
+}
+
+.icon{
+  width:44px;
+  height:44px;
+  border-radius:13px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(
+    135deg,
+    rgba(32,217,232,.14),
+    rgba(139,92,246,.16)
+  );
+  color:var(--cyan);
+  font-size:20px;
+  margin-bottom:15px;
+}
+
+.card h3{
+  font-size:16px;
+  margin-bottom:9px;
+}
+
+.card p{
+  font-size:12px;
+  color:var(--slate);
+  min-height:75px;
+}
+
+.learn{
+  display:inline-block;
+  margin-top:14px;
+  color:#8eefff;
+  font-size:12px;
+  font-weight:900;
+}
+
+/* ================= PORTFOLIO ================= */
+
+.portfolio{
+  background:
+    radial-gradient(circle at 10% 20%,rgba(40,120,255,.10),transparent 25%),
+    linear-gradient(180deg,#07111f,#0b1730);
+}
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:32px;
+}
+
+.project{
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:10px;
+  background:#0c1b31;
+  transition:.25s ease;
+}
+
+.project:hover{
+  transform:translateY(-5px);
+  border-color:rgba(139,92,246,.45);
+  box-shadow:0 18px 40px rgba(0,0,0,.25);
+}
+
+.project-preview{
+  min-height:190px;
+  border-radius:14px;
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+
+.project:nth-child(1) .project-preview{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(245,185,66,.22),
+      rgba(139,92,246,.22)
+    ),
+    linear-gradient(145deg,#162d4a,#14172e);
+}
+
+.project:nth-child(2) .project-preview{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(32,217,232,.20),
+      rgba(40,120,255,.22)
+    ),
+    linear-gradient(145deg,#132f50,#11172e);
+}
+
+.project:nth-child(3) .project-preview{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.22),
+      rgba(40,120,255,.20)
+    ),
+    linear-gradient(145deg,#132849,#11152d);
+}
+
+.project-preview h3{
+  font-size:23px;
+  line-height:1.1;
+}
+
+.project-preview small{
+  color:#a9c4df;
+  font-size:10px;
+  margin-top:7px;
+}
+
+.project-foot{
+  padding:15px 5px 5px;
+  color:var(--slate);
+  font-size:11px;
+}
+
+.project-foot b{
+  display:block;
+  color:#fff;
+  font-size:13px;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+  background:#f5f8fc;
+  color:#081426;
+}
+
+.about .sub{
+  color:#5c6d84;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr .55fr;
+  gap:30px;
+  align-items:center;
+}
+
+.about-visual{
+  min-height:300px;
+  border-radius:25px;
+  position:relative;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(32,217,232,.20),transparent 30%),
+    linear-gradient(145deg,#dcecff,#ffffff);
+}
+
+.about-screen{
+  position:absolute;
+  left:45px;
+  top:58px;
+  width:320px;
+  height:180px;
+  border:7px solid #8797aa;
+  border-radius:14px;
+  background:#091b32;
+}
+
+.about-screen:after{
+  content:"R";
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  font-size:75px;
+  font-weight:900;
+  font-style:italic;
+  background:linear-gradient(
+    135deg,
+    var(--cyan),
+    var(--blue),
+    var(--purple)
+  );
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.about-badge{
+  position:absolute;
+  right:20px;
+  bottom:22px;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  background:linear-gradient(
+    135deg,
+    var(--blue),
+    var(--purple),
+    var(--gold)
+  );
+  color:#fff;
+  font-weight:900;
+  box-shadow:0 12px 25px rgba(40,120,255,.25);
+}
+
+.bullets{
+  list-style:none;
+  display:grid;
+  gap:10px;
+  margin-top:18px;
+}
+
+.bullets li{
+  font-size:13px;
+}
+
+.bullets li:before{
+  content:"✓";
+  color:#0788ad;
+  margin-right:8px;
+  font-weight:900;
+}
+
+.stats{
+  background:#fff;
+  border:1px solid #e3eaf2;
+  border-radius:20px;
+  padding:18px;
+  box-shadow:0 10px 30px rgba(8,20,38,.06);
+}
+
+.stat{
+  padding:17px 5px;
+  border-bottom:1px solid #e8eef5;
+}
+
+.stat:last-child{
+  border:0;
+}
+
+.stat b{
+  font-size:29px;
+  background:linear-gradient(
+    90deg,
+    var(--blue),
+    var(--purple)
+  );
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.stat small{
+  display:block;
+  color:#64758a;
+}
+
+/* ================= REVIEWS ================= */
+
+.reviews{
+  background:
+    radial-gradient(circle at 85% 20%,rgba(245,185,66,.08),transparent 22%),
+    #07111f;
+}
+
+.review-head{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:end;
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:30px;
+}
+
+.review{
+  border:1px solid var(--line);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.05),
+      rgba(139,92,246,.035)
+    );
+  border-radius:18px;
+  padding:20px;
+  transition:.25s ease;
+}
+
+.review:hover{
+  border-color:rgba(245,185,66,.28);
+  transform:translateY(-3px);
+}
+
+.review p{
+  color:#d9e5f3;
+  font-size:13px;
+  min-height:70px;
+}
+
+.person{
+  margin-top:13px;
+  font-size:12px;
+}
+
+.person b{
+  color:#fff;
+}
+
+.stars{
+  color:var(--gold);
+  letter-spacing:2px;
+  margin-top:8px;
+}
+
+.review-form{
+  margin-top:28px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:rgba(255,255,255,.04);
+}
+
+.review-form h3{
+  grid-column:1/-1;
+  font-size:20px;
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.field.full{
+  grid-column:1/-1;
+}
+
+label{
+  font-size:11px;
+  color:#a9bad0;
+  font-weight:800;
+}
+
+input,
+textarea,
+select{
+  width:100%;
+  padding:12px 13px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,.13);
+  background:#09182c;
+  color:#fff;
+  outline:none;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+  border-color:var(--cyan);
+  box-shadow:0 0 0 3px rgba(32,217,232,.08);
+}
+
+textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+.submit{
+  border:0;
+  cursor:pointer;
+}
+
+.status{
+  grid-column:1/-1;
+  color:#9defff;
+  font-size:12px;
+  min-height:18px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+  background:
+    radial-gradient(circle at 15% 30%,rgba(32,217,232,.12),transparent 25%),
+    radial-gradient(circle at 85% 70%,rgba(139,92,246,.15),transparent 28%),
+    linear-gradient(135deg,#0c1d36,#11143a);
+}
+
+.contact-box{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:35px;
+  align-items:center;
+  padding:40px;
+  border:1px solid rgba(32,217,232,.16);
+  border-radius:26px;
+  background:rgba(255,255,255,.045);
+  box-shadow:0 25px 60px rgba(0,0,0,.18);
+}
+
+.contact-list{
+  display:grid;
+  gap:12px;
+  color:#dce8f6;
+  font-size:14px;
+}
+
+.contact-list b{
+  color:var(--gold);
+}
+
+footer{
+  background:#040b15;
+  color:#9fb0c4;
+  padding:30px 0;
+}
+
+.footer-row{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+  font-size:11px;
+}
+
+.footer-row a:hover{
+  color:var(--cyan);
+}
+
+/* ================= WHATSAPP ================= */
+
+.float-wa{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:var(--green);
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-size:27px;
+  z-index:9999;
+  box-shadow:0 12px 28px rgba(0,0,0,.35);
+  transition:.25s ease;
+}
+
+.float-wa:hover{
+  transform:scale(1.08);
+}
+
+/* ================= MOBILE MENU ================= */
+
+.menu-btn{
+  display:none;
+  border:1px solid var(--line);
+  background:#0b1b30;
+  color:#fff;
+  border-radius:10px;
+  padding:10px 12px;
+  font-size:18px;
+  cursor:pointer;
+}
+
+:focus-visible{
+  outline:2px solid var(--cyan);
+  outline-offset:3px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:980px){
+
+  nav{
+    gap:12px;
+  }
+
+  .service-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .hero-inner{
+    grid-template-columns:1fr;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .stats{
+    grid-column:1/-1;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+@media(max-width:700px){
+
+  .nav{
+    padding:10px 0;
+    position:relative;
+  }
+
+  .logo{
+    font-size:17px;
+  }
+
+  .logo-r{
+    font-size:31px;
+  }
+
+  .menu-btn{
+    display:block;
+    margin-left:auto;
+  }
+
+  nav{
+    display:none;
+    position:absolute;
+    top:68px;
+    left:0;
+    right:0;
+    padding:14px;
+    background:#0b1930;
+    border:1px solid var(--line);
+    border-radius:14px;
+    flex-direction:column;
+    gap:4px;
+    box-shadow:0 18px 40px rgba(0,0,0,.35);
+  }
+
+  nav.open{
+    display:flex;
+  }
+
+  nav a{
+    padding:10px 12px;
+    border-radius:8px;
+  }
+
+  nav a:hover{
+    background:rgba(255,255,255,.05);
+  }
+
+  .quote{
+    font-size:11px;
+    padding:9px 12px;
+  }
+
+  .hero-inner{
+    padding:55px 0 45px;
+  }
+
+  .hero h1{
+    letter-spacing:-1.5px;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
+
+  .service-grid,
+  .projects,
+  .about-grid,
+  .review-grid,
+  .contact-box,
+  .review-form{
+    grid-template-columns:1fr;
+  }
+
+  .stats{
+    grid-template-columns:1fr;
+  }
+
+  .about-screen{
+    left:20px;
+    width:280px;
+  }
+
+  .about-visual{
+    min-height:250px;
+  }
+
+  section{
+    padding:65px 0;
+  }
+
+  .review-head{
+    display:block;
+  }
+
+  .review-head .btn{
+    display:inline-block;
+    margin-top:18px;
+  }
+
+  .field.full,
+  .review-form h3,
+  .status{
+    grid-column:auto;
+  }
+
+  .contact-box{
+    padding:25px;
+  }
+
+  .float-wa{
+    right:15px;
+    bottom:15px;
+  }
+}
 </style>
 </head>
+
 <body>
-<header><div class="container nav">
-<a class="logo" href="#home"><span class="logo-r">R</span><span>am <span class="logo-web">Web</span> Design<small class="logo-tag">YOUR VISION • OUR DESIGN</small></span></a>
-<nav id="mainNav"><a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
-<button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button><a class="quote" href="https://mail.google.com/mail/?view=cm&fs=1&to=ramwebdesigning36@gmail.com" target="_blank" rel="noopener">Get a Free Quote →</a>
-</div></header>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+<div class="container nav">
+
+<a class="logo" href="#home">
+  <span class="logo-r">R</span>
+  <span>
+    am <span class="logo-web">Web</span> Design
+    <small class="logo-tag">YOUR VISION • OUR DESIGN</small>
+  </span>
+</a>
+
+<nav id="mainNav">
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#about">About</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<button
+  class="menu-btn"
+  id="menuBtn"
+  type="button"
+  aria-label="Open menu"
+  aria-expanded="false">
+  ☰
+</button>
+
+<a
+  class="quote"
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=ramwebdesigning36@gmail.com"
+  target="_blank"
+  rel="noopener">
+  Get a Free Quote →
+</a>
+
+</div>
+</header>
 
 <main>
-<section class="hero" id="home"><div class="container hero-inner"><div>
-<span class="badge">✦ PROFESSIONAL WEBSITE DESIGN & DEVELOPMENT</span>
-<h1>Turn Your Business Into A <span class="gradient">Powerful Digital Brand</span></h1>
-<p>Modern, fast and mobile-friendly websites for businesses, restaurants, hotels and local brands worldwide — designed to look professional and help you grow online.</p>
-<div class="checks"><span><b>✓</b>Modern Design</span><span><b>✓</b>SEO Friendly</span><span><b>✓</b>Fast Loading</span><span><b>✓</b>100% Responsive</span></div>
-<div class="actions"><a class="btn" href="#contact">Start Your Project →</a><a class="btn secondary" href="#portfolio">View Our Work</a></div>
-</div>
-<div class="hero-card"><div class="browser"><div class="browser-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="address"></div></div><div class="mock-site"><div class="mock-nav"><b>YOURBRAND</b><span>Home · Services · Contact</span></div><div class="mock-title">Great Websites<br>Create Big Opportunities</div><div class="mock-sub">Responsive · Fast · Professional</div><span class="mock-btn">GET STARTED</span></div></div><div class="float-stat"><b>★ 5/5</b><small>Demo Design Quality</small></div></div>
-</div></section>
 
-<section class="services" id="services"><div class="container"><div class="kicker">OUR SERVICES</div><div class="title">Everything Your Business Needs Online</div><p class="sub">From a professional website to ongoing digital support, we provide practical solutions for building and growing your online presence.</p>
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-inner">
+
+<div>
+
+<span class="badge">
+✦ PROFESSIONAL WEBSITE DESIGN & DEVELOPMENT
+</span>
+
+<h1>
+Turn Your Business Into A
+<span class="gradient">Powerful Digital Brand</span>
+</h1>
+
+<p>
+Modern, fast and mobile-friendly websites for businesses,
+restaurants, hotels and local brands worldwide — designed
+to look professional and help you grow online.
+</p>
+
+<div class="checks">
+<span><b>✓</b>Modern Design</span>
+<span><b>✓</b>SEO Friendly</span>
+<span><b>✓</b>Fast Loading</span>
+<span><b>✓</b>100% Responsive</span>
+</div>
+
+<div class="actions">
+<a class="btn" href="#contact">
+Start Your Project →
+</a>
+
+<a class="btn secondary" href="#portfolio">
+View Our Work
+</a>
+</div>
+
+</div>
+
+<div class="hero-card">
+
+<div class="browser">
+
+<div class="browser-top">
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<div class="address"></div>
+</div>
+
+<div class="mock-site">
+
+<div class="mock-nav">
+<b>YOURBRAND</b>
+<span>Home · Services · Contact</span>
+</div>
+
+<div class="mock-title">
+Great Websites<br>
+Create Big Opportunities
+</div>
+
+<div class="mock-sub">
+Responsive · Fast · Professional
+</div>
+
+<span class="mock-btn">
+GET STARTED
+</span>
+
+</div>
+</div>
+
+<div class="float-stat">
+<b>★ 5/5</b>
+<small>Demo Design Quality</small>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="kicker">OUR SERVICES</div>
+
+<div class="title">
+Everything Your Business Needs Online
+</div>
+
+<p class="sub">
+From a professional website to ongoing digital support,
+we provide practical solutions for building and growing
+your online presence.
+</p>
+
 <div class="service-grid">
-<article class="card"><div class="icon">▣</div><h3>Website Design & Development</h3><p>Custom websites that look professional and work smoothly across phones, tablets and computers.</p><a class="learn" href="#contact">Learn More →</a></article>
-<article class="card"><div class="icon">✦</div><h3>E-Commerce Websites</h3><p>Modern online stores designed for products, services, enquiries and a simple customer journey.</p><a class="learn" href="#contact">Learn More →</a></article>
-<article class="card"><div class="icon">⌕</div><h3>SEO Optimization</h3><p>Search-friendly website structure and content to help your business improve its online visibility.</p><a class="learn" href="#contact">Learn More →</a></article>
-<article class="card"><div class="icon">✿</div><h3>Graphic Design</h3><p>Logos, banners, social media creatives and branding materials that match your business identity.</p><a class="learn" href="#contact">Learn More →</a></article>
-<article class="card"><div class="icon">▯</div><h3>Website Maintenance</h3><p>Keep your website updated, secure, fresh and running smoothly after launch.</p><a class="learn" href="#contact">Learn More →</a></article>
-</div></div></section>
 
-<section class="portfolio" id="portfolio"><div class="container"><div class="kicker">OUR PORTFOLIO</div><div class="title">Recent Website Projects</div><p class="sub">Explore our demo websites for different types of businesses. Each project is designed with creativity, performance and usability in mind.</p>
-<div class="projects">
-<a class="project" href="Restaurant%20Demo/index.html"><div class="project-preview"><h3>Yuvraj<br>Indian Restaurant</h3><small>Food · Online Menu · Booking</small></div><div class="project-foot"><b>Restaurant Website</b>Food | Online Menu | Booking</div></a>
-<a class="project" href="Hotel%20Demo/index.html"><div class="project-preview"><h3>Royal Stay Hotel</h3><small>Booking · Gallery · Rooms</small></div><div class="project-foot"><b>Hotel Website</b>Booking | Gallery | Rooms</div></a>
-<a class="project" href="Business%20Demo/index.html"><div class="project-preview"><h3>NextGen Solutions</h3><small>Corporate · Services · Contact</small></div><div class="project-foot"><b>Business Website</b>Corporate | Services | Contact</div></a>
-</div></div></section>
+<article class="card">
+<div class="icon">▣</div>
+<h3>Website Design & Development</h3>
+<p>
+Custom websites that look professional and work smoothly
+across phones, tablets and computers.
+</p>
+<a class="learn" href="#contact">Learn More →</a>
+</article>
 
-<section class="about" id="about"><div class="container about-grid"><div class="about-visual"><div class="about-screen"></div><div class="about-badge">5+<br><small>Years<br>Experience</small></div></div><div><div class="kicker">ABOUT RAM WEB DESIGN</div><div class="title">Your Vision, Our Creativity</div><p class="sub">Ram Web Design helps businesses build a strong online presence with clean design, responsive layouts, fast performance and user-friendly experiences.</p><ul class="bullets"><li>100% Client Satisfaction</li><li>On-Time Delivery</li><li>Affordable Pricing</li><li>Dedicated Support</li></ul></div><div class="stats"><div class="stat"><b>100%</b><small>Responsive Design</small></div><div class="stat"><b>24/7</b><small>Website Access</small></div><div class="stat"><b>1:1</b><small>Direct Support</small></div></div></div></section>
+<article class="card">
+<div class="icon">✦</div>
+<h3>E-Commerce Websites</h3>
+<p>
+Modern online stores designed for products, services,
+enquiries and a simple customer journey.
+</p>
+<a class="learn" href="#contact">Learn More →</a>
+</article>
 
-<section class="reviews" id="reviews"><div class="container"><div class="review-head"><div><div class="kicker">CUSTOMER REVIEWS</div><div class="title">What Our Clients Say</div><p class="sub">Read existing feedback and leave your own review after working with Ram Web Design.</p></div><a class="btn" href="#write-review">Write a Review →</a></div>
-<div class="review-grid" id="reviewList">
-<article class="review"><p>“Amazing work! My website looks modern and professional. Highly recommended!”</p><div class="person"><b>Amit Sharma</b><br>Restaurant Owner</div><div class="stars">★★★★★</div></article>
-<article class="review"><p>“Very professional and supportive team. They delivered the project on time and exceeded my expectations.”</p><div class="person"><b>Priya Verma</b><br>Hotel Manager</div><div class="stars">★★★★★</div></article>
-<article class="review"><p>“Great design, fast service and excellent communication. Will definitely work again!”</p><div class="person"><b>Rohit Mehta</b><br>Business Owner</div><div class="stars">★★★★★</div></article>
+<article class="card">
+<div class="icon">⌕</div>
+<h3>SEO Optimization</h3>
+<p>
+Search-friendly website structure and content to help
+your business improve its online visibility.
+</p>
+<a class="learn" href="#contact">Learn More →</a>
+</article>
+
+<article class="card">
+<div class="icon">✿</div>
+<h3>Graphic Design</h3>
+<p>
+Logos, banners, social media creatives and branding
+materials that match your business identity.
+</p>
+<a class="learn" href="#contact">Learn More →</a>
+</article>
+
+<article class="card">
+<div class="icon">▯</div>
+<h3>Website Maintenance</h3>
+<p>
+Keep your website updated, secure, fresh and running
+smoothly after launch.
+</p>
+<a class="learn" href="#contact">Learn More →</a>
+</article>
+
 </div>
-<form class="review-form" id="write-review"><h3>Share Your Experience</h3><div class="field"><label for="reviewName">Your Name</label><input id="reviewName" required maxlength="80" placeholder="Enter your name"></div><div class="field"><label for="reviewRating">Rating</label><select id="reviewRating"><option value="5">★★★★★ 5 Stars</option><option value="4">★★★★☆ 4 Stars</option><option value="3">★★★☆☆ 3 Stars</option><option value="2">★★☆☆☆ 2 Stars</option><option value="1">★☆☆☆☆ 1 Star</option></select></div><div class="field full"><label for="reviewText">Your Review</label><textarea id="reviewText" required maxlength="800" placeholder="Write your experience..."></textarea></div><button class="btn submit" type="submit">Submit Review →</button><div class="status" id="reviewStatus" aria-live="polite"></div></form>
-</div></section>
+</div>
+</section>
 
-<section class="contact" id="contact"><div class="container contact-box"><div><div class="kicker">LET'S WORK TOGETHER</div><div class="title">Ready To Build Your Website?</div><p class="sub">Tell us about your business and the website you need. We can discuss your project, design and pricing.</p><div class="actions" style="margin-top:22px"><a class="btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=ramwebdesigning36@gmail.com" target="_blank" rel="noopener">Email Us →</a><a class="btn secondary" href="https://wa.me/916284488267?text=Hello%20Ram%20Web%20Design%20%F0%9F%91%8B%0AI%27m%20interested%20in%20a%20professional%20website.%0APlease%20share%20details%20and%20pricing." target="_blank" rel="noopener">WhatsApp Us</a></div></div><div class="contact-list"><div><b>Email</b><br>ramwebdesigning36@gmail.com</div><div><b>WhatsApp</b><br>+91 6284488267</div><div><b>Service</b><br>Professional websites worldwide</div></div></div></section>
+<!-- ================= PORTFOLIO ================= -->
+
+<section class="portfolio" id="portfolio">
+
+<div class="container">
+
+<div class="kicker">OUR PORTFOLIO</div>
+
+<div class="title">
+Recent Website Projects
+</div>
+
+<p class="sub">
+Explore our demo websites for different types of businesses.
+Each project is designed with creativity, performance and
+usability in mind.
+</p>
+
+<div class="projects">
+
+<a class="project" href="Restaurant%20Demo/index.html">
+
+<div class="project-preview">
+<h3>
+Yuvraj<br>
+Indian Restaurant
+</h3>
+
+<small>
+Food · Online Menu · Booking
+</small>
+</div>
+
+<div class="project-foot">
+<b>Restaurant Website</b>
+Food | Online Menu | Booking
+</div>
+
+</a>
+
+<a class="project" href="Hotel%20Demo/index.html">
+
+<div class="project-preview">
+<h3>
+Royal Stay Hotel
+</h3>
+
+<small>
+Booking · Gallery · Rooms
+</small>
+</div>
+
+<div class="project-foot">
+<b>Hotel Website</b>
+Booking | Gallery | Rooms
+</div>
+
+</a>
+
+<a class="project" href="Business%20Demo/index.html">
+
+<div class="project-preview">
+<h3>
+NextGen Solutions
+</h3>
+
+<small>
+Corporate · Services · Contact
+</small>
+</div>
+
+<div class="project-foot">
+<b>Business Website</b>
+Corporate | Services | Contact
+</div>
+
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+<div class="about-visual">
+
+<div class="about-screen"></div>
+
+<div class="about-badge">
+5+
+<br>
+<small>
+Years<br>
+Experience
+</small>
+</div>
+
+</div>
+
+<div>
+
+<div class="kicker">
+ABOUT RAM WEB DESIGN
+</div>
+
+<div class="title">
+Your Vision, Our Creativity
+</div>
+
+<p class="sub">
+Ram Web Design helps businesses build a strong online
+presence with clean design, responsive layouts, fast
+performance and user-friendly experiences.
+</p>
+
+<ul class="bullets">
+<li>100% Client Satisfaction</li>
+<li>On-Time Delivery</li>
+<li>Affordable Pricing</li>
+<li>Dedicated Support</li>
+</ul>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<b>100%</b>
+<small>Responsive Design</small>
+</div>
+
+<div class="stat">
+<b>24/7</b>
+<small>Website Access</small>
+</div>
+
+<div class="stat">
+<b>1:1</b>
+<small>Direct Support</small>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+
+<section class="reviews" id="reviews">
+
+<div class="container">
+
+<div class="review-head">
+
+<div>
+
+<div class="kicker">
+CUSTOMER REVIEWS
+</div>
+
+<div class="title">
+What Our Clients Say
+</div>
+
+<p class="sub">
+Read existing feedback and leave your own review
+after working with Ram Web Design.
+</p>
+
+</div>
+
+<a class="btn" href="#write-review">
+Write a Review →
+</a>
+
+</div>
+
+<div class="review-grid" id="reviewList">
+
+<article class="review">
+
+<p>
+“Amazing work! My website looks modern and professional.
+Highly recommended!”
+</p>
+
+<div class="person">
+<b>Amit Sharma</b>
+<br>
+Restaurant Owner
+</div>
+
+<div class="stars">
+★★★★★
+</div>
+
+</article>
+
+<article class="review">
+
+<p>
+“Very professional and supportive team. They delivered
+the project on time and exceeded my expectations.”
+</p>
+
+<div class="person">
+<b>Priya Verma</b>
+<br>
+Hotel Manager
+</div>
+
+<div class="stars">
+★★★★★
+</div>
+
+</article>
+
+<article class="review">
+
+<p>
+“Great design, fast service and excellent communication.
+Will definitely work again!”
+</p>
+
+<div class="person">
+<b>Rohit Mehta</b>
+<br>
+Business Owner
+</div>
+
+<div class="stars">
+★★★★★
+</div>
+
+</article>
+
+</div>
+
+<form class="review-form" id="write-review">
+
+<h3>
+Share Your Experience
+</h3>
+
+<div class="field">
+
+<label for="reviewName">
+Your Name
+</label>
+
+<input
+id="reviewName"
+required
+maxlength="80"
+placeholder="Enter your name">
+
+</div>
+
+<div class="field">
+
+<label for="reviewRating">
+Rating
+</label>
+
+<select id="reviewRating">
+
+<option value="5">★★★★★ 5 Stars</option>
+<option value="4">★★★★☆ 4 Stars</option>
+<option value="3">★★★☆☆ 3 Stars</option>
+<option value="2">★★☆☆☆ 2 Stars</option>
+<option value="1">★☆☆☆☆ 1 Star</option>
+
+</select>
+
+</div>
+
+<div class="field full">
+
+<label for="reviewText">
+Your Review
+</label>
+
+<textarea
+id="reviewText"
+required
+maxlength="800"
+placeholder="Write your experience..."></textarea>
+
+</div>
+
+<button
+class="btn submit"
+type="submit">
+Submit Review →
+</button>
+
+<div
+class="status"
+id="reviewStatus"
+aria-live="polite">
+</div>
+
+</form>
+
+</div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container contact-box">
+
+<div>
+
+<div class="kicker">
+LET'S WORK TOGETHER
+</div>
+
+<div class="title">
+Ready To Build Your Website?
+</div>
+
+<p class="sub">
+Tell us about your business and the website you need.
+We can discuss your project, design and pricing.
+</p>
+
+<div
+class="actions"
+style="margin-top:22px">
+
+<a
+class="btn"
+href="https://mail.google.com/mail/?view=cm&fs=1&to=ramwebdesigning36@gmail.com"
+target="_blank"
+rel="noopener">
+Email Us →
+</a>
+
+<a
+class="btn secondary"
+href="https://wa.me/916284488267?text=Hello%20Ram%20Web%20Design%20%F0%9F%91%8B%0AI%27m%20interested%20in%20a%20professional%20website.%0APlease%20share%20details%20and%20pricing."
+target="_blank"
+rel="noopener">
+WhatsApp Us
+</a>
+
+</div>
+
+</div>
+
+<div class="contact-list">
+
+<div>
+<b>Email</b>
+<br>
+ramwebdesigning36@gmail.com
+</div>
+
+<div>
+<b>WhatsApp</b>
+<br>
++91 6284488267
+</div>
+
+<div>
+<b>Service</b>
+<br>
+Professional websites worldwide
+</div>
+
+</div>
+
+</div>
+</section>
+
 </main>
-<footer><div class="container footer-row"><span>© 2026 Ram Web Design. All rights reserved.</span><span><a href="#home">Home</a> · <a href="#services">Services</a> · <a href="#portfolio">Portfolio</a> · <a href="#reviews">Reviews</a> · <a href="#contact">Contact</a></span></div></footer>
-<a class="float-wa" href="https://wa.me/916284488267?text=Hello%20Ram%20Web%20Design%20%F0%9F%91%8B%0AI%27m%20interested%20in%20getting%20a%20professional%20website%20for%20my%20business.%0APlease%20share%20the%20details%20and%20pricing.%20Thank%20you!" target="_blank" rel="noopener">💬</a>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container footer-row">
+
+<span>
+© 2026 Ram Web Design. All rights reserved.
+</span>
+
+<span>
+<a href="#home">Home</a> ·
+<a href="#services">Services</a> ·
+<a href="#portfolio">Portfolio</a> ·
+<a href="#reviews">Reviews</a> ·
+<a href="#contact">Contact</a>
+</span>
+
+</div>
+
+</footer>
+
+<!-- ================= WHATSAPP FLOATING BUTTON ================= -->
+
+<a
+class="float-wa"
+href="https://wa.me/916284488267?text=Hello%20Ram%20Web%20Design%20%F0%9F%91%8B%0AI%27m%20interested%20in%20getting%20a%20professional%20website%20for%20my%20business.%0APlease%20share%20the%20details%20and%20pricing.%20Thank%20you!"
+target="_blank"
+rel="noopener">
+💬
+</a>
+
+<!-- ================= JAVASCRIPT ================= -->
 
 <script type="module">
-const SUPABASE_URL="https://wbnneykgshnbdbexlckw.supabase.co";
-const SUPABASE_KEY="sb_publishable_b6cfnKg6pAJYEPd2153Iog_Eq5fbv0Q";
-const list=document.getElementById("reviewList"),form=document.getElementById("write-review"),status=document.getElementById("reviewStatus");
-const menuBtn=document.getElementById("menuBtn"),mainNav=document.getElementById("mainNav");
-const esc=v=>String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
-const stars=n=>"★".repeat(Math.max(1,Math.min(5,Number(n)||5)))+"☆".repeat(5-Math.max(1,Math.min(5,Number(n)||5)));
-function card(x,top=false){const a=document.createElement("article");a.className="review";a.innerHTML=`<p>“${esc(x.review)}”</p><div class="person"><b>${esc(x.name)}</b><br>Customer</div><div class="stars">${stars(x.rating)}</div>`;top?list.prepend(a):list.appendChild(a)}
-function closeMenu(){mainNav.classList.remove("open");menuBtn.setAttribute("aria-expanded","false")}
-menuBtn?.addEventListener("click",()=>{const open=!mainNav.classList.contains("open");mainNav.classList.toggle("open",open);menuBtn.setAttribute("aria-expanded",String(open))});
-mainNav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeMenu));
-async function load(){
-  try{
-    const r=await fetch(`${SUPABASE_URL}/rest/v1/reviews?select=id,name,rating,review&order=id.desc`,{headers:{apikey:SUPABASE_KEY,Authorization:`Bearer ${SUPABASE_KEY}`}});
-    if(!r.ok)return;
-    const rows=await r.json();
-    if(rows.length){
-      list.innerHTML="";
-      rows.forEach(x=>card(x));
-    }
-  }catch(e){}
+
+const SUPABASE_URL =
+"https://wbnneykgshnbdbexlckw.supabase.co";
+
+const SUPABASE_KEY =
+"sb_publishable_b6cfnKg6pAJYEPd2153Iog_Eq5fbv0Q";
+
+const list =
+document.getElementById("reviewList");
+
+const form =
+document.getElementById("write-review");
+
+const status =
+document.getElementById("reviewStatus");
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const mainNav =
+document.getElementById("mainNav");
+
+
+const esc = v =>
+String(v).replace(
+  /[&<>"']/g,
+  c => ({
+    "&":"&amp;",
+    "<":"&lt;",
+    ">":"&gt;",
+    '"':"&quot;",
+    "'":"&#039;"
+  }[c])
+);
+
+
+const stars = n => {
+
+const rating =
+Math.max(
+  1,
+  Math.min(
+    5,
+    Number(n) || 5
+  )
+);
+
+return "★".repeat(rating) +
+"☆".repeat(5-rating);
+
+};
+
+
+function card(x,top=false){
+
+const a =
+document.createElement("article");
+
+a.className="review";
+
+a.innerHTML=`
+
+<p>“${esc(x.review)}”</p>
+
+<div class="person">
+<b>${esc(x.name)}</b>
+<br>
+Customer
+</div>
+
+<div class="stars">
+${stars(x.rating)}
+</div>
+
+`;
+
+top
+? list.prepend(a)
+: list.appendChild(a);
+
 }
-form.addEventListener("submit",async e=>{e.preventDefault();const name=document.getElementById("reviewName").value.trim(),rating=Number(document.getElementById("reviewRating").value),review=document.getElementById("reviewText").value.trim();if(!name||!review)return;status.textContent="Submitting your review...";try{const r=await fetch(`${SUPABASE_URL}/rest/v1/reviews`,{method:"POST",headers:{apikey:SUPABASE_KEY,Authorization:`Bearer ${SUPABASE_KEY}`,"Content-Type":"application/json",Prefer:"return=representation"},body:JSON.stringify({name,rating,review})});if(!r.ok)throw Error();const x=await r.json();if(x[0])card(x[0],true);form.reset();status.textContent="Thank you! Your review has been added."}catch(e){status.textContent="Review could not be submitted right now. Please try again."}});
+
+
+function closeMenu(){
+
+mainNav.classList.remove("open");
+
+menuBtn.setAttribute(
+  "aria-expanded",
+  "false"
+);
+
+}
+
+
+menuBtn?.addEventListener(
+"click",
+()=>{
+
+const open =
+!mainNav.classList.contains("open");
+
+mainNav.classList.toggle(
+  "open",
+  open
+);
+
+menuBtn.setAttribute(
+  "aria-expanded",
+  String(open)
+);
+
+});
+
+
+mainNav?.querySelectorAll("a")
+.forEach(
+a => a.addEventListener(
+  "click",
+  closeMenu
+)
+);
+
+
+async function load(){
+
+try{
+
+const r =
+await fetch(
+`${SUPABASE_URL}/rest/v1/reviews?select=id,name,rating,review&order=id.desc`,
+{
+headers:{
+apikey:SUPABASE_KEY,
+Authorization:
+`Bearer ${SUPABASE_KEY}`
+}
+}
+);
+
+if(!r.ok) return;
+
+const rows =
+await r.json();
+
+if(rows.length){
+
+list.innerHTML="";
+
+rows.forEach(
+x => card(x)
+);
+
+}
+
+}catch(e){}
+
+}
+
+
+form.addEventListener(
+"submit",
+async e => {
+
+e.preventDefault();
+
+const name =
+document
+.getElementById("reviewName")
+.value
+.trim();
+
+const rating =
+Number(
+document
+.getElementById("reviewRating")
+.value
+);
+
+const review =
+document
+.getElementById("reviewText")
+.value
+.trim();
+
+if(!name || !review)
+return;
+
+status.textContent =
+"Submitting your review...";
+
+try{
+
+const r =
+await fetch(
+`${SUPABASE_URL}/rest/v1/reviews`,
+{
+method:"POST",
+
+headers:{
+apikey:SUPABASE_KEY,
+Authorization:
+`Bearer ${SUPABASE_KEY}`,
+"Content-Type":
+"application/json",
+Prefer:
+"return=representation"
+},
+
+body:
+JSON.stringify({
+name,
+rating,
+review
+})
+
+}
+);
+
+if(!r.ok)
+throw Error();
+
+const x =
+await r.json();
+
+if(x[0])
+card(x[0],true);
+
+form.reset();
+
+status.textContent =
+"Thank you! Your review has been added.";
+
+}catch(e){
+
+status.textContent =
+"Review could not be submitted right now. Please try again.";
+
+}
+
+});
+
+
 load();
+
 </script>
+
 </body>
 </html>
+```
