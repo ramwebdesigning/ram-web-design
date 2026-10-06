@@ -1010,7 +1010,58 @@ footer{
     bottom:15px;
   }
 }
+  /* Professional Service Icons */
+.icon{
+  width:64px;
+  height:64px;
+  border-radius:18px;
+  display:grid;
+  place-items:center;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(32,217,232,.18),
+      rgba(40,120,255,.18),
+      rgba(139,92,246,.20)
+    );
+  border:1px solid rgba(32,217,232,.22);
+  color:var(--cyan);
+  font-size:28px;
+  margin-bottom:18px;
+  box-shadow:0 10px 30px rgba(32,217,232,.08);
+  transition:.3s ease;
+}
+
+.card:hover .icon{
+  transform:scale(1.08) rotate(-3deg);
+  border-color:rgba(32,217,232,.55);
+  box-shadow:
+    0 0 25px rgba(32,217,232,.16),
+    0 12px 35px rgba(139,92,246,.12);
+}
+
+/* Different icon colors */
+.icon.seo{
+  color:#42e695;
+}
+
+.icon.design{
+  color:#ff78c8;
+}
+
+.icon.mobile{
+  color:#7aa7ff;
+}
+
+.icon.shop{
+  color:#f5b942;
+}
+
+.icon.maintenance{
+  color:#42e695;
+}
 </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -1165,55 +1216,59 @@ your online presence.
 
 <div class="service-grid">
 
-<article class="card">
-<div class="icon">▣</div>
-<h3>Website Design & Development</h3>
-<p>
-Custom websites that look professional and work smoothly
-across phones, tablets and computers.
-</p>
-<a class="learn" href="#contact">Learn More →</a>
-</article>
+  <article class="card">
+    <div class="icon">
+      <i class="fa-solid fa-code"></i>
+    </div>
+    <h3>Website Design &amp; Development</h3>
+    <p>Modern, fast and mobile-friendly websites tailored to your business needs.</p>
+    <a class="learn" href="#contact">Learn More →</a>
+  </article>
 
-<article class="card">
-<div class="icon">✦</div>
-<h3>E-Commerce Websites</h3>
-<p>
-Modern online stores designed for products, services,
-enquiries and a simple customer journey.
-</p>
-<a class="learn" href="#contact">Learn More →</a>
-</article>
+  <article class="card">
+    <div class="icon seo">
+      <i class="fa-solid fa-chart-line"></i>
+    </div>
+    <h3>SEO &amp; Online Visibility</h3>
+    <p>Get found online and attract more customers with search-friendly website solutions.</p>
+    <a class="learn" href="#contact">Learn More →</a>
+  </article>
 
-<article class="card">
-<div class="icon">⌕</div>
-<h3>SEO Optimization</h3>
-<p>
-Search-friendly website structure and content to help
-your business improve its online visibility.
-</p>
-<a class="learn" href="#contact">Learn More →</a>
-</article>
+  <article class="card">
+    <div class="icon design">
+      <i class="fa-solid fa-palette"></i>
+    </div>
+    <h3>Logo &amp; Graphic Design</h3>
+    <p>Unique logos, banners and visual designs that make your business brand stand out.</p>
+    <a class="learn" href="#contact">Learn More →</a>
+  </article>
 
-<article class="card">
-<div class="icon">✿</div>
-<h3>Graphic Design</h3>
-<p>
-Logos, banners, social media creatives and branding
-materials that match your business identity.
-</p>
-<a class="learn" href="#contact">Learn More →</a>
-</article>
+  <article class="card">
+    <div class="icon mobile">
+      <i class="fa-solid fa-mobile-screen-button"></i>
+    </div>
+    <h3>Mobile Friendly Websites</h3>
+    <p>Websites that look great and work smoothly on phones, tablets and computers.</p>
+    <a class="learn" href="#contact">Learn More →</a>
+  </article>
 
-<article class="card">
-<div class="icon">▯</div>
-<h3>Website Maintenance</h3>
-<p>
-Keep your website updated, secure, fresh and running
-smoothly after launch.
-</p>
-<a class="learn" href="#contact">Learn More →</a>
-</article>
+  <article class="card">
+    <div class="icon shop">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <h3>E-Commerce Solutions</h3>
+    <p>Professional online stores designed for products, services and customer enquiries.</p>
+    <a class="learn" href="#contact">Learn More →</a>
+  </article>
+
+  <article class="card">
+    <div class="icon maintenance">
+      <i class="fa-solid fa-rocket"></i>
+    </div>
+    <h3>Website Maintenance</h3>
+    <p>Keep your website updated, secure, fresh and running smoothly after launch.</p>
+    <a class="learn" href="#contact">Learn More →</a>
+  </article>
 
 </div>
 </div>
