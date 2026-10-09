@@ -1010,58 +1010,36 @@ footer{
     bottom:15px;
   }
 }
-  /* Professional Service Icons */
-.icon{
-  width:64px;
-  height:64px;
-  border-radius:18px;
-  display:grid;
-  place-items:center;
-  background:
-    linear-gradient(
-      135deg,
-      rgba(32,217,232,.18),
-      rgba(40,120,255,.18),
-      rgba(139,92,246,.20)
-    );
-  border:1px solid rgba(32,217,232,.22);
-  color:var(--cyan);
-  font-size:28px;
-  margin-bottom:18px;
-  box-shadow:0 10px 30px rgba(32,217,232,.08);
-  transition:.3s ease;
+
+
+/* ================= LUXURY GOLD RAM BRANDING ================= */
+.brand-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.brand-mark{width:54px;height:54px;position:relative;display:grid;place-items:center;border-radius:15px;background:radial-gradient(circle at 35% 30%,#fff3a6 0%,#ffd75a 20%,#e9a91b 55%,#8f5b00 100%);box-shadow:0 0 12px rgba(245,185,66,.35),0 8px 25px rgba(0,0,0,.35);overflow:hidden}
+.brand-mark span{position:relative;z-index:2;font-family:Georgia,serif;font-size:43px;line-height:1;font-weight:900;font-style:italic;color:#07111f;text-shadow:1px 1px 0 #fff1a0,2px 3px 4px rgba(0,0,0,.35)}
+.brand-mark::after{content:"";position:absolute;width:62px;height:20px;border:3px solid #fff0a0;border-left-color:transparent;border-bottom-color:transparent;border-radius:50%;transform:rotate(-18deg);right:-18px;top:24px;opacity:.95}
+.brand-name{display:flex;flex-direction:column;line-height:1}
+.brand-name strong{font-family:Georgia,serif;font-size:20px;letter-spacing:3px;font-weight:900;background:linear-gradient(90deg,#fff1a0,#f5b942,#c98708);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand-name b{margin-top:3px;font-size:10px;letter-spacing:3px;color:#fff;font-weight:800}
+.brand-name small{margin-top:6px;font-size:6.5px;letter-spacing:1.3px;color:#d8b65b;font-weight:700;white-space:nowrap}
+
+/* Professional service icons */
+.icon{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(32,217,232,.18),rgba(40,120,255,.18),rgba(139,92,246,.20));border:1px solid rgba(32,217,232,.22);color:var(--cyan);font-size:28px;margin-bottom:18px;box-shadow:0 10px 30px rgba(32,217,232,.08);transition:.3s ease}
+.card:hover .icon{transform:scale(1.08) rotate(-3deg);border-color:rgba(32,217,232,.55);box-shadow:0 0 25px rgba(32,217,232,.16),0 12px 35px rgba(139,92,246,.12)}
+.icon.seo{color:#42e695}.icon.design{color:#ff78c8}.icon.mobile{color:#7aa7ff}.icon.shop{color:#f5b942}.icon.maintenance{color:#42e695}
+
+@media(min-width:981px){.service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){
+  .brand-logo{gap:7px;max-width:calc(100vw - 110px)}
+  .brand-mark{width:45px;height:45px;border-radius:12px;flex-shrink:0}
+  .brand-mark span{font-size:35px}
+  .brand-mark::after{width:50px;height:16px;right:-15px;top:20px}
+  .brand-name strong{font-size:16px;letter-spacing:2px}
+  .brand-name b{font-size:8px;letter-spacing:2px}
+  .brand-name small{font-size:5.5px;letter-spacing:.8px}
 }
 
-.card:hover .icon{
-  transform:scale(1.08) rotate(-3deg);
-  border-color:rgba(32,217,232,.55);
-  box-shadow:
-    0 0 25px rgba(32,217,232,.16),
-    0 12px 35px rgba(139,92,246,.12);
-}
-
-/* Different icon colors */
-.icon.seo{
-  color:#42e695;
-}
-
-.icon.design{
-  color:#ff78c8;
-}
-
-.icon.mobile{
-  color:#7aa7ff;
-}
-
-.icon.shop{
-  color:#f5b942;
-}
-
-.icon.maintenance{
-  color:#42e695;
-}
 </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -1071,12 +1049,13 @@ footer{
 <header>
 <div class="container nav">
 
-<a class="logo" href="#home">
-<span class="logo-r">R</span>
-<span>
-am <span class="logo-web">Web</span> Design
-<small class="logo-tag">YOUR VISION • OUR DESIGN</small>
-</span>
+<a class="brand-logo" href="#home" aria-label="Ram Web Design home">
+  <span class="brand-mark"><span>R</span></span>
+  <span class="brand-name">
+    <strong>RAM</strong>
+    <b>WEB DESIGN</b>
+    <small>PROFESSIONAL WEBSITES WORLDWIDE</small>
+  </span>
 </a>
 
 <nav id="mainNav">
@@ -1216,59 +1195,47 @@ your online presence.
 
 <div class="service-grid">
 
-  <article class="card">
-    <div class="icon">
-      <i class="fa-solid fa-code"></i>
-    </div>
-    <h3>Website Design &amp; Development</h3>
-    <p>Modern, fast and mobile-friendly websites tailored to your business needs.</p>
-    <a class="learn" href="#contact">Learn More →</a>
-  </article>
+<article class="card">
+  <div class="icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+  <h3>Website Design &amp; Development</h3>
+  <p>Modern, fast and mobile-friendly websites tailored to your business needs.</p>
+  <a class="learn" href="#contact">Learn More →</a>
+</article>
 
-  <article class="card">
-    <div class="icon seo">
-      <i class="fa-solid fa-chart-line"></i>
-    </div>
-    <h3>SEO &amp; Online Visibility</h3>
-    <p>Get found online and attract more customers with search-friendly website solutions.</p>
-    <a class="learn" href="#contact">Learn More →</a>
-  </article>
+<article class="card">
+  <div class="icon seo"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+  <h3>SEO &amp; Online Visibility</h3>
+  <p>Search-friendly website solutions to help customers discover your business online.</p>
+  <a class="learn" href="#contact">Learn More →</a>
+</article>
 
-  <article class="card">
-    <div class="icon design">
-      <i class="fa-solid fa-palette"></i>
-    </div>
-    <h3>Logo &amp; Graphic Design</h3>
-    <p>Unique logos, banners and visual designs that make your business brand stand out.</p>
-    <a class="learn" href="#contact">Learn More →</a>
-  </article>
+<article class="card">
+  <div class="icon design"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+  <h3>Logo &amp; Graphic Design</h3>
+  <p>Logos, banners and brand visuals that give your business a consistent identity.</p>
+  <a class="learn" href="#contact">Learn More →</a>
+</article>
 
-  <article class="card">
-    <div class="icon mobile">
-      <i class="fa-solid fa-mobile-screen-button"></i>
-    </div>
-    <h3>Mobile Friendly Websites</h3>
-    <p>Websites that look great and work smoothly on phones, tablets and computers.</p>
-    <a class="learn" href="#contact">Learn More →</a>
-  </article>
+<article class="card">
+  <div class="icon mobile"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div>
+  <h3>Mobile-Friendly Websites</h3>
+  <p>Websites that work smoothly on phones, tablets and desktop computers.</p>
+  <a class="learn" href="#contact">Learn More →</a>
+</article>
 
-  <article class="card">
-    <div class="icon shop">
-      <i class="fa-solid fa-cart-shopping"></i>
-    </div>
-    <h3>E-Commerce Solutions</h3>
-    <p>Professional online stores designed for products, services and customer enquiries.</p>
-    <a class="learn" href="#contact">Learn More →</a>
-  </article>
+<article class="card">
+  <div class="icon shop"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div>
+  <h3>E-Commerce Solutions</h3>
+  <p>Online stores for showcasing products, services and customer enquiries.</p>
+  <a class="learn" href="#contact">Learn More →</a>
+</article>
 
-  <article class="card">
-    <div class="icon maintenance">
-      <i class="fa-solid fa-rocket"></i>
-    </div>
-    <h3>Website Maintenance</h3>
-    <p>Keep your website updated, secure, fresh and running smoothly after launch.</p>
-    <a class="learn" href="#contact">Learn More →</a>
-  </article>
+<article class="card">
+  <div class="icon maintenance"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div>
+  <h3>Website Maintenance</h3>
+  <p>Keep your website updated, secure and running smoothly after launch.</p>
+  <a class="learn" href="#contact">Learn More →</a>
+</article>
 
 </div>
 </div>
