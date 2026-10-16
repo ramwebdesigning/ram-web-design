@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Prime Business Solutions | Luxury Business</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,14 +11,14 @@
 
   <style>
     :root {
-      --navy: #101b25;
-      --navy-light: #182733;
-      --gold: #c9a96e;
-      --gold-light: #e4cfaa;
-      --cream: #f5f1e9;
+      --navy: #111c25;
+      --navy-light: #1b2b36;
+      --gold: #c6a46a;
+      --gold-light: #e3cfaa;
+      --cream: #f6f2ea;
+      --text: #252b30;
+      --muted: #70777c;
       --white: #fff;
-      --text: #20272c;
-      --muted: #687078;
     }
 
     * {
@@ -42,13 +41,13 @@
     header {
       position: sticky;
       top: 0;
-      z-index: 100;
-      padding: 18px 8%;
+      z-index: 10;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      background: rgba(16, 27, 37, 0.97);
-      border-bottom: 1px solid rgba(201, 169, 110, 0.35);
+      align-items: center;
+      padding: 18px 8%;
+      background: rgba(17, 28, 37, 0.97);
+      border-bottom: 1px solid rgba(198, 164, 106, 0.45);
     }
 
     .logo {
@@ -56,35 +55,33 @@
       font-family: "Cormorant Garamond", Georgia, serif;
       font-size: 27px;
       font-weight: 700;
-      letter-spacing: 0.5px;
     }
 
     nav a {
-      color: #f5f1e9;
+      margin-left: 25px;
+      color: var(--white);
       text-decoration: none;
-      margin-left: 28px;
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 1.2px;
       text-transform: uppercase;
-      transition: color 0.25s ease;
+      transition: color 0.25s;
     }
 
     nav a:hover {
-      color: var(--gold);
+      color: var(--gold-light);
     }
 
     .hero {
       min-height: 570px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 100px 8%;
+      display: grid;
+      place-items: center;
+      padding: 90px 8%;
       text-align: center;
       color: var(--white);
       background:
-        radial-gradient(ellipse at 50% 0%, rgba(201, 169, 110, 0.18), transparent 55%),
-        linear-gradient(135deg, #101b25, #1c2b36 65%, #101b25);
-      border-bottom: 1px solid rgba(201, 169, 110, 0.45);
+        radial-gradient(ellipse at top, rgba(198, 164, 106, 0.18), transparent 55%),
+        linear-gradient(135deg, var(--navy), var(--navy-light), var(--navy));
+      border-bottom: 1px solid rgba(198, 164, 106, 0.5);
     }
 
     .hero-content {
@@ -92,40 +89,39 @@
     }
 
     .eyebrow {
+      margin-bottom: 12px;
       color: var(--gold-light);
       font-size: 12px;
       letter-spacing: 4px;
       text-transform: uppercase;
-      margin-bottom: 18px;
     }
 
     .hero h1 {
+      margin-bottom: 20px;
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: clamp(46px, 7vw, 76px);
+      font-size: clamp(48px, 7vw, 76px);
       line-height: 1.05;
       font-weight: 600;
-      margin-bottom: 22px;
     }
 
     .hero p {
       max-width: 680px;
-      margin: 0 auto 32px;
-      color: #d4d9dc;
+      margin: 0 auto 30px;
+      color: #d8dcde;
       font-size: 17px;
     }
 
     .btn {
       display: inline-block;
-      padding: 13px 27px;
       margin: 5px;
+      padding: 13px 27px;
       border: 1px solid var(--gold);
-      border-radius: 2px;
       text-decoration: none;
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 1.4px;
+      letter-spacing: 1.2px;
       text-transform: uppercase;
-      transition: all 0.25s ease;
+      transition: 0.25s;
     }
 
     .primary {
@@ -135,7 +131,6 @@
 
     .primary:hover {
       background: var(--gold-light);
-      border-color: var(--gold-light);
       transform: translateY(-2px);
     }
 
@@ -150,29 +145,24 @@
     }
 
     section {
-      padding: 85px 8%;
+      padding: 82px 8%;
     }
 
     .section-title {
+      margin-bottom: 45px;
       text-align: center;
-      margin-bottom: 48px;
-    }
-
-    .section-title .eyebrow {
-      margin-bottom: 8px;
     }
 
     .section-title h2 {
+      margin-bottom: 10px;
       color: var(--navy);
       font-family: "Cormorant Garamond", Georgia, serif;
       font-size: clamp(38px, 5vw, 52px);
       line-height: 1.1;
-      margin-bottom: 12px;
     }
 
     .section-title p {
       color: var(--muted);
-      font-size: 15px;
     }
 
     .services {
@@ -185,47 +175,48 @@
 
     .service-card {
       position: relative;
-      overflow: hidden;
       min-height: 300px;
-      padding: 38px 30px;
+      padding: 36px 28px;
+      overflow: hidden;
       text-align: center;
-      background: #fff;
-      border: 1px solid #e4dccd;
-      box-shadow: 0 12px 35px rgba(16, 27, 37, 0.07);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: var(--white);
+      border: 1px solid #e5dccb;
+      box-shadow: 0 12px 35px rgba(17, 28, 37, 0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .service-card::before {
-      content: "";
       position: absolute;
-      inset: 0 0 auto;
+      top: 0;
+      left: 0;
+      width: 100%;
       height: 3px;
       background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      content: "";
     }
 
     .service-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 45px rgba(16, 27, 37, 0.14);
+      transform: translateY(-7px);
+      box-shadow: 0 20px 42px rgba(17, 28, 37, 0.14);
     }
 
     .service-icon {
       width: 76px;
       height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 22px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 20px;
       border: 1px solid var(--gold);
       border-radius: 50%;
       background: #fbf8f1;
-      font-size: 34px;
+      font-size: 33px;
     }
 
     .service-card h3 {
+      margin-bottom: 12px;
       color: var(--navy);
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 27px;
-      margin-bottom: 12px;
+      font-size: 28px;
     }
 
     .service-card p {
@@ -235,8 +226,8 @@
 
     .about {
       text-align: center;
-      background: var(--navy);
       color: var(--white);
+      background: var(--navy);
     }
 
     .about .section-title h2 {
@@ -246,31 +237,30 @@
     .about p {
       max-width: 850px;
       margin: auto;
-      color: #d0d6da;
+      color: #d3d9dc;
       font-size: 16px;
     }
 
     .contact {
       text-align: center;
-      background: var(--cream);
     }
 
     .contact p {
-      margin: 10px 0;
+      margin: 9px 0;
       color: var(--muted);
       font-size: 16px;
     }
 
     .contact .btn {
-      margin-top: 22px;
+      margin-top: 20px;
     }
 
     footer {
       padding: 24px 8%;
+      border-top: 1px solid rgba(198, 164, 106, 0.4);
+      color: #d3d9dc;
+      background: #0b141b;
       text-align: center;
-      color: #d0d6da;
-      background: #0b141c;
-      border-top: 1px solid rgba(201, 169, 110, 0.35);
       font-size: 13px;
     }
 
@@ -278,24 +268,17 @@
       position: fixed;
       right: 24px;
       bottom: 24px;
-      z-index: 99;
+      z-index: 5;
       width: 56px;
       height: 56px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid rgba(255, 255, 255, 0.5);
+      display: grid;
+      place-items: center;
       border-radius: 50%;
-      color: white;
+      color: var(--white);
       background: #20b968;
       text-decoration: none;
       font-size: 27px;
       box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
-      transition: transform 0.25s ease;
-    }
-
-    .whatsapp:hover {
-      transform: scale(1.08);
     }
 
     @media (max-width: 768px) {
@@ -322,12 +305,12 @@
       }
 
       .hero {
-        min-height: 500px;
-        padding: 75px 6%;
+        min-height: 490px;
+        padding: 70px 6%;
       }
 
       section {
-        padding: 65px 6%;
+        padding: 62px 6%;
       }
 
       .services {
@@ -345,7 +328,6 @@
 
   <header>
     <div class="logo">Prime Business Solutions</div>
-
     <nav>
       <a href="#home">Home</a>
       <a href="#services">Services</a>
@@ -356,7 +338,7 @@
 
   <section class="hero" id="home">
     <div class="hero-content">
-      <div class="eyebrow">Excellence • Strategy • Growth</div>
+      <div class="eyebrow">Excellence · Strategy · Growth</div>
       <h1>Grow Your Business With Confidence</h1>
       <p>
         A refined business website concept designed to present your company,
@@ -375,32 +357,32 @@
     </div>
 
     <div class="services">
-      <div class="service-card">
+      <article class="service-card">
         <div class="service-icon">💻</div>
         <h3>Business Consulting</h3>
         <p>
           Professional guidance to help businesses improve their online
           presence and operations.
         </p>
-      </div>
+      </article>
 
-      <div class="service-card">
+      <article class="service-card">
         <div class="service-icon">📈</div>
         <h3>Business Growth</h3>
         <p>
           Practical strategies to help businesses reach more customers
-          and build a distinguished brand.
+          and build their brand.
         </p>
-      </div>
+      </article>
 
-      <div class="service-card">
+      <article class="service-card">
         <div class="service-icon">🌐</div>
         <h3>Digital Solutions</h3>
         <p>
           Modern digital solutions for businesses looking to establish
-          a strong and elegant online presence.
+          a strong online presence.
         </p>
-      </div>
+      </article>
     </div>
   </section>
 
@@ -409,7 +391,6 @@
       <div class="eyebrow">Our Story</div>
       <h2>About Our Business</h2>
     </div>
-
     <p>
       Prime Business Solutions is a sample business website created as a
       portfolio demonstration by Ram Web Design. This demo shows how a
@@ -423,11 +404,9 @@
       <div class="eyebrow">Start a Conversation</div>
       <h2>Let's Work Together</h2>
     </div>
-
     <p>📍 Serving Businesses Worldwide</p>
     <p>📞 +91 6284488267</p>
     <p>✉️ ramwebdesigning36@gmail.com</p>
-
     <a href="mailto:ramwebdesigning36@gmail.com" class="btn primary">
       Get a Free Quote
     </a>
@@ -437,9 +416,11 @@
     <p>© 2026 Prime Business Solutions | Demo Website by Ram Web Design</p>
   </footer>
 
-  <a href="https://wa.me/916284488267" class="whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    💬
-  </a>
+  <a href="https://wa.me/916284488267"
+     class="whatsapp"
+     target="_blank"
+     rel="noopener"
+     aria-label="Chat on WhatsApp">💬</a>
 
 </body>
 </html>
